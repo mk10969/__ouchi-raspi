@@ -97,6 +97,11 @@ sudo vi /boot/firmware/cmdline.txt
 末尾に下記を追加する。
 cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
 
+## Node labelsを設定
+
+kubectl label nodes raspi02 devicetype=bluetooth
+kubectl label nodes raspi03 devicetype=infrared
+
 ## TODO
 
 将来的に、Ansibleにしたいね！

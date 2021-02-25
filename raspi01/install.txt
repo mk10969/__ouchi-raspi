@@ -1,0 +1,51 @@
+◯bluetooth
+sudo apt install -y python3-pip
+sudo apt install -y libboost-python-dev
+sudo apt install -y libboost-thread-dev
+sudo apt install -y libbluetooth-dev　 ### pybluezをインストールするために必要
+pip3 install pybluez
+sudo apt install -y pkg-config　### gattlibをインストールするために必要
+sudo apt install -y libglib2.0　### gattlibをインストールするために必要
+pip3 install gattlib
+
+git clone https://github.com/OpenWonderLabs/python-host.git
+
+sudo apt  install bluez  ### 確認のためインストール
+
+bluetoothのUSBを挿すこと。
+
+usermodでbluetoothのグループを、ubuntuユーザに追加
+sudo usermod -aG bluetooth ubuntu
+
+おまけ
+sudo usermod -aG docker ubuntu
+
+
+
+◯fish
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt-get update
+sudo apt-get install fish
+
+- shell確認
+cat  /etc/shells
+ - デフォルトシェルをfishに変える
+chsh -s /usr/bin/fish
+
+KUBECONFIG=$HOME/.kube/config
+ を、config.fishに入れておく。
+
+
+◯Rustとstarship
+Rustは公式通り。
+
+starshipは、下記のモジュールが必要。
+sudo apt install -y build-essential
+sudo apt install -y libssl-dev
+
+◯Golang
+sudo apt install golang
+
+
+
+
