@@ -41,7 +41,8 @@ Rustは公式通り。
 
 starshipは、下記のモジュールが必要。
 sudo apt install -y build-essential
-sudo apt install -y libssl-dev
+sudo apt install -y pkg-config libssl-dev
+sudo apt install -y gcc
 
 ◯Golang
 sudo apt install golang
